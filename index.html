@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/Bootstrap/CSS/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Conceitos Bootstrap</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hellokitty</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contatc</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  mais links
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">hello</a></li>
+                  <li><a class="dropdown-item" href="#">kitty</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://placehold.co/600x400/black/white" class="d-block w-100" alt="imagem">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>uma imagem fofa da hello kitty.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://placehold.co/600x400/black/white" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>uma imagem fofa da hello kitty.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src=" https://placehold.co/600x400/black/white" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>uma imagem fofa da hello kitty.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+       <!-- colunas -->
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+      </div>
+      <!-- guias -->
+       <div class="guias">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" 
+            aria-labelledby="home-tab" tabindex="0">
+            Conteudo do home
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" 
+            aria-labelledby="profile-tab" tabindex="0">
+                conteudo do perfil
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" 
+            aria-labelledby="contact-tab" tabindex="0"> 
+            conteudo do contato 
+             </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
+             aria-labelledby="disabled-tab" tabindex="0">
+             ...</div>
+          </div>
+       </div>
+    </div>
+    <script src="./vendor/Bootstrap/Js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
